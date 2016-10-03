@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yd4-86-gtV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edM-Ht-IB9">
+                                        <rect key="frame" x="151" y="50" width="300" height="500"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b33-UF-clK">
+                                                <rect key="frame" x="46" y="231" width="192" height="39"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="Calculate Cat Years">
+                                                    <color key="titleColor" red="0.3558619966442953" green="0.096083263422818796" blue="0.010355494966442953" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="calculatebtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dCv-5T-FVl"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6u3-9i-qFQ">
+                                                <rect key="frame" x="53" y="387" width="177" height="39"/>
+                                                <color key="backgroundColor" red="1" green="0.74058287775838938" blue="0.071466023489932889" alpha="0.34552801724137933" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Human Years" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5C2-kI-XTy">
+                                                <rect key="frame" x="54" y="51" width="192" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XrM-yK-wWb">
+                                                <rect key="frame" x="238" y="51" width="29" height="30"/>
+                                                <state key="normal" image="Synchronize-50.png"/>
+                                                <connections>
+                                                    <action selector="resetbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JhO-S3-JxC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.6791631711409396" blue="0.071466023489932889" alpha="0.29647090517241381" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="XrM-yK-wWb" firstAttribute="leading" secondItem="5C2-kI-XTy" secondAttribute="trailing" id="5eQ-tz-ZYA"/>
+                                            <constraint firstItem="b33-UF-clK" firstAttribute="centerY" secondItem="edM-Ht-IB9" secondAttribute="centerY" id="5f1-QA-d2B"/>
+                                            <constraint firstItem="XrM-yK-wWb" firstAttribute="top" secondItem="edM-Ht-IB9" secondAttribute="top" constant="51" id="F8J-8j-Mmd"/>
+                                            <constraint firstAttribute="height" constant="500" id="HwB-f3-6Ia"/>
+                                            <constraint firstAttribute="width" constant="300" id="MN1-iD-go7"/>
+                                            <constraint firstItem="5C2-kI-XTy" firstAttribute="centerX" secondItem="edM-Ht-IB9" secondAttribute="centerX" id="V9l-Wh-yaN"/>
+                                            <constraint firstItem="6u3-9i-qFQ" firstAttribute="centerX" secondItem="edM-Ht-IB9" secondAttribute="centerX" id="b00-T5-mwD"/>
+                                            <constraint firstItem="b33-UF-clK" firstAttribute="centerX" secondItem="edM-Ht-IB9" secondAttribute="centerX" id="e0n-s9-vYq"/>
+                                            <constraint firstItem="5C2-kI-XTy" firstAttribute="top" secondItem="edM-Ht-IB9" secondAttribute="top" constant="51" id="fMD-hY-YyS"/>
+                                            <constraint firstItem="6u3-9i-qFQ" firstAttribute="top" secondItem="b33-UF-clK" secondAttribute="bottom" constant="117" id="pjs-DB-jPt"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.81537838950335573" blue="0.071466023489932889" alpha="0.29647090517241381" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="edM-Ht-IB9" firstAttribute="centerX" secondItem="Yd4-86-gtV" secondAttribute="centerX" id="bw2-lY-RfT"/>
+                                    <constraint firstItem="edM-Ht-IB9" firstAttribute="centerY" secondItem="Yd4-86-gtV" secondAttribute="centerY" id="ixI-YQ-qMz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yd4-86-gtV" secondAttribute="trailing" constant="-20" id="Djj-59-AEj"/>
+                            <constraint firstItem="Yd4-86-gtV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="PnZ-Yk-UyI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Yd4-86-gtV" secondAttribute="bottom" id="WDL-9f-vLo"/>
+                            <constraint firstItem="Yd4-86-gtV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="ZhT-FS-4lc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="humanYeartxtfld" destination="5C2-kI-XTy" id="sRg-1l-aRg"/>
+                        <outlet property="outputlbl" destination="6u3-9i-qFQ" id="sot-3n-65S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="314"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Synchronize-50.png" width="35" height="35"/>
+    </resources>
+</document>
